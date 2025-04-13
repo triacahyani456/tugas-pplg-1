@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false">
+        <label for="">Masukan jari jari</label>
+        <input type="number" id="jarijari">
+        <button onclick="hitunglingkaran()">hitung</button>
+    </form>
+    <div id="hasil"></div>
+    <script>
+        function hitunglingkaran() {
+            let r = document.getElementById('jarijari').value
+            const PI = 3.14;
+            let luas = PI *r *r
+            let hasil2 = 2 *jarijari
+            document.getElementById("hasil").innerHTML= "luas lingkaran + "+ luas
+        }
+    </script>
+</body>
+</html>
